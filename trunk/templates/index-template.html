@@ -1,0 +1,13 @@
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Bug List</title>
+</head>
+<body>
+    {% for bug in bugs -%}
+        <a href="{{bug.url}}/{{bug.file}}">{{bug.id}}</a>
+    {% endfor %}
+</body>
+</html>
+<!-- {{timestamp}} -->
+

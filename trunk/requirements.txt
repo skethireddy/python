@@ -1,0 +1,5 @@
+dynaconf
+mysql-connector-python
+jinja2==2.7.3
+Flask
+pyyaml

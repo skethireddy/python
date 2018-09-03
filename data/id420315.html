@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="title" content="Brute force drop counter stats less then real number of reset connections by ~10%"/>
+    <meta name="kb_doc_type" content="Bug"/>
+    <meta name="original_date" content="2013-05-01 09:15:44"/>
+    <meta name="updated_date" content="2018-02-26 10:17:15"/>
+    <meta name="product" content="BIG-IP"/>
+    <meta name="product_family" content="BIG-IP"/>
+    <meta name="product_module" content="ASM"/>
+    <meta name="BIG-IP" content="11.4.0, 11.3.0, 11.2.1"/>
+    <meta name="bug_id" content="420315"/>
+    <meta name="alternate_bug_id" content="ID420315"/>
+    <meta name="related_kb_id" content=""/>
+    <meta name="alternate_related_kb_id" content=""/>
+    <meta name="severity" content="3-Major"/>
+    <meta name="state" content="Verified"/>
+    <meta name="product_fix_version" content="11.5.0, 11.4.0 HF3, 11.3.0 HF8, 11.2.1 HF8"/>
+    <meta name="fix_category" content="Application Security Manager"/>
+    <meta name="cve" content=""/>
+    <meta name="vulnerability_severity" content=""/>
+
+    <title>Bug ID 420315</title>
+    <link rel=stylesheet type="text/css" href="css/bug-database.css">
+
+    
+    
+    
+
+    
+    
+    
+    
+
+</head>
+
+<!--
+Notes:
+
+For the items below, a valid value is defined as one that is non-null and not an empty string
+
+1) For bugs with a valid https://support.f5.com/csp/#/article/K72944100 value, display:inline should to be replaced with 'display:inline'. Otherwise it should be replaced with
+   'display:none'.
+
+2) The /support.f5.com/csp/#/article/K72944100 value is the ID of a knowledge base article on AskF5, and is prefaced with a 'k'. It is part of the https://support.f5.com/csp/#/article/K72944100 field,
+   however that field is a complete URL. We need to grab the text that comes after the last forward slash in https://support.f5.com/csp/#/article/K72944100. The support.f5.com/csp/#/article/K72944100
+   field should be the article ID without the 'k'.
+
+3) Bugs with a CVE ID value need to show slightly different markup compared with other bugs. If a valid  value is present,
+    should be replaced with 'display:none' and  should be replaced with 'display:inline'. Likewise, if there
+   isn't a valid  value present,  should be replaced with 'display:inline' and  should be replaced
+   with 'display:none'.
+-->
+
+<body>
+	<div class="meta-row">
+        <div class="container">
+            <ul class="nav">
+                <li><a href="//f5.com">F5.com</a></li>
+                <li><a href="//devcentral.f5.com">DevCentral</a></li>
+                <li><a href="//support.f5.com">Support</a></li>
+                <li><a href="//partners.f5.com">Partners</a></li>
+                <li><a href="//f5.com/about-us/careers">Careers</a></li>
+            </ul>
+        </div>
+    </div>
+	
+	<div class="main-row">
+        <div class="container">           
+            <div class="brand">
+                <a href="//f5.com"><img src="https://cdn.f5.com/digital-platforms/images/logo.svg" alt="f5 Networks" height="42" width="47"></a>
+            </div>
+        </div>
+    </div>
+
+	<div class="container">
+		<div class="row csp-bread-crumbs">
+			<div class="col-md-12">
+				<ul id="breadCrumbs">
+					<li>
+    					<a href="https://support.f5.com/csp/home">AskF5 Home</a>
+					</li>
+					<li>
+						<a href="https://support.f5.com/csp/bug-tracker">Bug Tracker</a>
+					</li>
+					<li>
+						<span>ID 420315</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	
+		<div class="row">
+			<div class="col-md-10 middlecontent">
+				<div class="row">
+					<div class="col-sm-12 col-lg-12">
+						<h2>Bug ID 420315: Brute force drop counter stats less then real number of reset connections by ~10%</h2>
+						<p>
+                            <span class="text-Proximafont standard-field">Published: </span>2013-05-01 09:15:44&nbsp;
+                            <span class="text-Proximafont standard-field">Last Modified: </span>2018-02-26 10:17:15
+						</p>
+					</div>
+				</div>
+		
+				<div class="row csp-article-type">
+					<div class="col-sm-6">
+						<h5 class="bugdatabase">Bug Tracker</h5>
+					</div>
+				</div>
+
+				<div class="row csp-article-version">
+					<div class="col-md-12">
+						<section class="container-fluid well article-version">
+							<div class="row">
+								<div class="col-sm-12">
+									<p>
+										<span class="text-Proximafont">Product and Affected Module:</span><br/>
+										<span>BIG-IP<span class=""> ASM</span></span>
+									</p>
+								</div>
+								<div class="col-sm-12">
+									<p>
+										<span class="text-Proximafont">Known Affected Versions:</span><br/>
+										<span>11.4.0, 11.3.0, 11.2.1</span>
+									</p>
+								</div>
+								<div class="col-sm-12">
+									 <p>
+										<span class="text-Proximafont">Fixed In:</span><br/>
+										<span>11.5.0, 11.4.0 HF3, 11.3.0 HF8, 11.2.1 HF8</span>
+									</p>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-12">
+						<p class="date-container ng-binding">
+							<span class="text-Proximafont standard-field">Opened: </span>2013-05-01 09:15:44<br/>
+
+                            <span style="">
+                                <span class="text-Proximafont standard-field">Severity: </span>3-Major<br/>
+                                <span class="text-Proximafont standard-field" style="display:inline">Related Known Issue Article: </span><a href="https://support.f5.com/csp/#/article/K72944100">/support.f5.com/csp/#/article/K72944100</a><br/>
+                            </span>
+                            <span style="">
+                                <span class="text-Proximafont standard-field">Vulnerability Severity: </span><br/>
+                                <span class="text-Proximafont standard-field">CVE: </span><br/>
+                                <span class="text-Proximafont standard-field" style="display:inline">Related Security Advisory Article: </span><a href="https://support.f5.com/csp/#/article/K72944100">/support.f5.com/csp/#/article/K72944100</a>
+                            </span>
+						</p>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-12 bug-content">
+                        <h4>Symptoms</h4>
+                        <p>The drop reports are not accurate in brute force. The drops from the last seconds of the attack are not reported.</p>
+
+                        <h4>Impact</h4>
+                        <p>Not accurate staticts reporting in GUI of rejected connections for brute force attack.</p>
+
+                        <h4>Conditions</h4>
+                        <p>Customer encountered on their own and found the numbers of Rejected Connections and dropped_requests don't match the number of actually dropped requests on a client.</p>
+
+                        <h4>Workaround</h4>
+                        <p>This issue has no workaround at this time.</p>
+
+                        <h4>Fix Information</h4>
+                        <p>The system now reports brute force drops even from the last seconds of an attack.</p>
+
+                        <h4>Behavior Change</h4>
+                        <p></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-2">
+			</div>
+		</div>
+	</div>
+
+	<footer id="F5-Footer">
+        <div class="container">
+            <ul class="links">
+                <li>
+                    <input type="checkbox" class="read-more-state" id="post-1">
+                    <label for="post-1" class="read-more-trigger"><span> About F5</span></label>
+                    <ul class="read-more-wrap">
+                         <li class="read-more-target"><a href="//f5.com/about-us">Corporate Information</a></li>
+                         <li class="read-more-target"><a href="//f5.com/about-us/news">Newsroom</a></li>
+                         <li class="read-more-target"><a href="//f5.com/about-us/investor-relations">Investor Relations</a></li>
+                         <li class="read-more-target"><a href="//f5.com/about-us/careers">Careers</a></li>
+                         <li class="read-more-target"><a href="//f5.com/about-us/contact">Contact Information</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <input type="checkbox" class="read-more-state" id="post-2">
+                    <label for="post-2" class="read-more-trigger"><span> Education</span></label>
+                    <ul class="read-more-wrap">
+                        <li class="read-more-target"><a href="//f5.com/education/training">Training</a></li>
+                        <li class="read-more-target"><a href="//f5.com/education/certification">Certification</a></li>
+                        <li class="read-more-target"><a href="//f5.com/education/adn-program">ADN Program</a></li>
+                        <li class="read-more-target"><a href="//university.f5.com">F5 University</a></li>
+                        <li class="read-more-target"><a href="https://f5.com/education/training/free-courses">Free Online Training</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <input type="checkbox" class="read-more-state" id="post-3">
+                    <label for="post-3" class="read-more-trigger"><span> F5 Sites</span></label>
+                    <ul class="read-more-wrap">
+                        <li class="read-more-target"><a href="//f5.com">F5.com</a></li>
+                        <li class="read-more-target"><a href="//devcentral.f5.com">DevCentral</a></li>
+                        <li class="read-more-target"><a href="//support.f5.com">Support Portal</a></li>
+                        <li class="read-more-target"><a href="//partners.f5.com">Partner Central</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <input type="checkbox" class="read-more-state" id="post-4">
+                    <label for="post-4" class="read-more-trigger"><span> Connect With Us</span></label>
+                    <ul class="social-media read-more-wrap">
+                        <li class="read-more-target"><a href="//twitter.com/f5networks" target="_blank" data-name="twitter" data-type="" data-prefix="social" data-utf="E032" title="Twitter"><i class="icon-twitter "></i></a></li>
+                        <li class="read-more-target"><a href="//www.linkedin.com/company/f5-networks" target="_blank" class="linkedin" title="LinkedIn"><i class="icon-linkedin "></i></a></li>
+                        <li class="read-more-target"><a href="//www.facebook.com/f5networksinc" target="_blank" class="facebook" title="Facebook"><i class="icon-facebook "></i></a></li>
+                        <li class="read-more-target"><a href="//www.youtube.com/f5networksinc" target="_blank" class="youtube" title="YouTube"><i class="icon-youtube "></i></a></li>
+                        <li class="read-more-target"><a href="//devcentral.f5.com" target="_blank" class="devcentral" title="DevCentral"><i class="icon-dc-pos "></i></a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="sub-footer legal-text">
+                <li>© 2018 F5 Networks, Inc. All rights reserved.</li>
+                <li><a href="//f5.com/about-us/policies">Policies</a></li>
+                <li><a href="//f5.com/about-us/policies/trademarks">Trademarks</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
