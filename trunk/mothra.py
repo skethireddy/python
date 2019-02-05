@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-    Get F5 bug info from a database into HTML and then into Subversion.
+    Get a bug info from a database into HTML and then into Subversion.
 """
 import mysql.connector
 import os
